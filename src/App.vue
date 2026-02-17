@@ -3,7 +3,6 @@
 </template>
 
 <script>
-
 import Game from './views/Game.vue'
 
 export default {
