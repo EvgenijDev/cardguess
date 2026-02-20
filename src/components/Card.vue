@@ -2,7 +2,7 @@
    <div class="card" @click="flip" :class="{ flipped: flipped || matched }">
      <div class="front">
        <img :src="card.image" alt="" />
-       <h6>{{card.name}}</h6>
+       <h5><span>{{card.name}}</span></h5>
      </div>
      <div class="back">?</div>
    </div>
@@ -22,7 +22,7 @@
  
  <style scoped>
  .card {
-   width: 320x;
+   width: 130px;
    height: 160px;
    perspective: 600px;
    cursor: pointer;
@@ -41,11 +41,17 @@
  }
  .card .front {
    transform: rotateY(180deg);
-   background: rgb(170, 113, 113);
+   background: rgb(126, 150, 211);
+   display: flex;
+   flex-direction: column;
  }
  .card .front img {
-   width: 320x;
-   height: 150px;
+   width: 130px;
+   height: 80px;
+ }
+ .card .front span {
+   color: white;
+   height: 80px;
  }
  .card .back {
    background: #2196f3;

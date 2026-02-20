@@ -62,7 +62,7 @@
  <style scoped>
 .board {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
+  grid-template-columns: repeat(auto-fill, 130px);
   grid-gap: 10px;
   justify-content: center;
   margin-top: 20px;
